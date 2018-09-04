@@ -1,0 +1,207 @@
+ svg {
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+
+
+        #hen_story * {
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-iteration-count: infinite;
+        }
+
+        .stroke_path,
+        #hen_eye {
+            fill: none;
+            stroke: #231F20;
+            stroke-miterlimit: 10;
+        }
+
+
+        .fill_path {
+            fill: #FFFFFF;
+            stroke: #231F20;
+            stroke-miterlimit: 10;
+        }
+
+        #hen {
+            -webkit-animation-name: hen_Animation;
+            animation-name: hen_Animation;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            transform-box: fill-box;
+            -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+        }
+
+        #hen_body {
+            -webkit-animation-name: hen_body_Animation;
+            animation-name: hen_body_Animation;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            transform-box: fill-box;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
+        }
+
+        #egg {
+            -webkit-animation-name: egg_Animation;
+            animation-name: egg_Animation;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            transform-box: fill-box;
+            -webkit-transform: translate(-3px, -6px);
+            transform: translate(-3px, -6px);
+        }
+
+        #egg_fall {
+            -webkit-animation-name: egg_part_Animation;
+            animation-name: egg_part_Animation;
+            opacity: 0;
+        }
+
+        @-webkit-keyframes egg_part_Animation {
+            71% {
+                opacity: 0;
+            }
+            72% {
+                opacity: 1;
+            }
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes egg_part_Animation {
+            71% {
+                opacity: 0;
+            }
+            72% {
+                opacity: 1;
+            }
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes egg_Animation {
+            72% {
+                -webkit-transform: translate(-3px, -6px);
+                transform: translate(-3px, -6px);
+            }
+            75% {
+                -webkit-transform: translate(-3px, 1px);
+                transform: translate(-3px, 1px);
+            }
+            0% {
+                -webkit-transform: translate(-3px, -6px);
+                transform: translate(-3px, -6px);
+            }
+            100% {
+                -webkit-transform: translate(-3px, 1px);
+                transform: translate(-3px, 1px);
+            }
+        }
+
+        @keyframes egg_Animation {
+            72% {
+                -webkit-transform: translate(-3px, -6px);
+                transform: translate(-3px, -6px);
+            }
+            75% {
+                -webkit-transform: translate(-3px, 1px);
+                transform: translate(-3px, 1px);
+            }
+            0% {
+                -webkit-transform: translate(-3px, -6px);
+                transform: translate(-3px, -6px);
+            }
+            100% {
+                -webkit-transform: translate(-3px, 1px);
+                transform: translate(-3px, 1px);
+            }
+        }
+
+        @-webkit-keyframes hen_body_Animation {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            10% {
+                -webkit-transform: rotate(-95deg);
+                transform: rotate(-95deg);
+            }
+            30% {
+                -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+            }
+            42% {
+                -webkit-transform: rotate(-70deg);
+                transform: rotate(-70deg);
+            }
+            58% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            72% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes hen_body_Animation {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            10% {
+                -webkit-transform: rotate(-95deg);
+                transform: rotate(-95deg);
+            }
+            30% {
+                -webkit-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+            }
+            42% {
+                -webkit-transform: rotate(-70deg);
+                transform: rotate(-70deg);
+            }
+            58% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            71% {
+                -webkit-transform: translate(0px, 5px);
+                transform: translate(0px, 5px);
+            }
+            72% {
+                -webkit-transform: translate(0px, 2px);
+                transform: translate(0px, 2px);
+            }
+            73% {
+                -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
