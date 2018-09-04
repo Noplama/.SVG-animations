@@ -1,2 +1,2 @@
-# hello-world
-a place for publishing creative things
+# .SVG animations
+a place for creative animations useful for websites.
